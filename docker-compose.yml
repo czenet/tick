@@ -15,7 +15,6 @@ services:
     image: influxdb:1.3.5
     volumes:
       - influxdbv:/var/lib/influxdb:Z
-      # FAGZAL:
       - ./etc/influxdb.conf:/etc/influxdb/influxdb.conf:Z
     ports:
       - "8086:8086"
